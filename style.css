@@ -1,0 +1,17 @@
+
+.playarea {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: crimson;
+    padding:10px;
+    border: 1px solid black;
+/* need to make 9 squares then dom connect with gameboard  array */
+}
+
+.block {
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    
+}
