@@ -3,24 +3,37 @@
     <link rel='stylesheet' href='style.css'>
 </head>
 <body>
-    <input type="text" id='names' value="">
-    <button id='addPlayer'>Add Player</button>
+    <form class="playerNames">
+        <div class="formGroup">
+            <label for="player1">Player 1 (X)</label>
+            <input type="text" class="formGroup" id="player1" placeholder="Name of Player 1">
+        </div>
+        <div class="formGroup">
+            <label for="player2">Player 2 (O)</label>
+            <input type="text" class="formGroup" id="player2" placeholder="Name of Player 2">
+        </div>
+        <button type="submit" class="playButton">Play</button>
+    </form>
+
+    <div class = "col-4 offset-4 place hidden"></div>
+    <div class ="alert alert-primary game-status text-center">
+        <h4>Board:</h4>
+    </div>
+ 
     <div class='container'>
         <h1>Tic Tac Toe</h1>
         <div class='playarea'>
-            <div id='block0' class='block'>X</div>
-            <div id='block1' class='block'>X</div>
-            <div id='block2' class='block'>X</div>
-            <div id='block3' class='block'>O</div>
-            <div id='block4' class='block'>O</div>
-            <div id='block5' class='block'>O</div>
-            <div id='block6' class='block'>X</div>
-            <div id='block7' class='block'>O</div>
-            <div id='block8' class='block'>O</div>
+            <div id='block0' class='block'></div>
+            <div id='block1' class='block'></div>
+            <div id='block2' class='block'></div>
+            <div id='block3' class='block'></div>
+            <div id='block4' class='block'></div>
+            <div id='block5' class='block'></div>
+            <div id='block6' class='block'></div>
+            <div id='block7' class='block'></div>
+            <div id='block8' class='block'></div>
         </div>
     </div>
-
-    <button onclick="resetBoard()">RESET BOARD</button>
-
+    <button id="reset" class="resetButton">Restart</button>
     <script src="script.js"></script>
 </body>
